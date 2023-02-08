@@ -6,7 +6,7 @@ InvCF (2022) aims to discover disentangled representations that faithfully revea
 See the **quick lead-in** below.
 
 - Q: What is popularity distribution shift in the real-world? 
-![Visualization of real-world popularity distribution shifts, where both **𝑃<sub>text</sub>** and **𝑃<sub>text</sub>** are possible to occur but areunpredictable and unmeasurable.](https://github.com/anzhang314/InvCF/blob/main/Intro.pdfg)
+![Visualization of real-world popularity distribution shifts, where both 𝑃𝑡𝑒𝑠𝑡 and 𝑃𝑡𝑒𝑠𝑡 are possible to occur but areunpredictable and unmeasurable.](https://github.com/anzhang314/InvCF/blob/main/Intro.pdf)
 * Q: Why does the disribution shift lead to performance drops in collaborative filtering (CF) models?
 + Q: How do we solve the problem?
 * Q: Why does our solution lead to robust performance?
