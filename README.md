@@ -6,8 +6,14 @@ InvCF (2022) aims to discover disentangled representations that faithfully revea
 See the **quick lead-in** below.
 
 - Q: What is popularity distribution shift in the real-world? 
-![Visualization of real-world popularity distribution shifts, where both 𝑃𝑡𝑒𝑠𝑡 and 𝑃𝑡𝑒𝑠𝑡 are possible to occur but areunpredictable and unmeasurable.](Intro.pdf)
+
+Popularity distribution shifts are caused by the demographic, regional, and chronological diversity of human behaviors. For example, something trendy at the training stage might become very unpopular in the next period. But with popularity information injected to fit interactions in training stage, the prediction results in the next period will dramatically deviate from the user's true interest.
+
 * Q: Why does the disribution shift lead to performance drops in collaborative filtering (CF) models?
+
+That’s because there exists a confliction between the implicit assumption of CF models and Inevitable Popularity Distribution Shift in the real-world.  
+CF models assume that the training and test data are drawn from the same distribution, but the assumption hardly holds. Popularity distribution shifts are ubiquitous and inevitable in real-world scenarios 
+
 + Q: How do we solve the problem?
 * Q: Why does our solution lead to robust performance?
 
