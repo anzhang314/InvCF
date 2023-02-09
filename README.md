@@ -10,3 +10,8 @@ See the **quick lead-in** below.
 * Q: Why does the disribution shift lead to performance drops in collaborative filtering (CF) models?
 + Q: How do we solve the problem?
 * Q: Why does our solution lead to robust performance?
+
+## Installation
+
+
+## Run DIR
