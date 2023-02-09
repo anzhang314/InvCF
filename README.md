@@ -13,5 +13,29 @@ See the **quick lead-in** below.
 
 ## Installation
 
+Main packages: PyTorch >= 1.11.0
 
 ## Run DIR
+
+To run the code, First run the following line to install tools used in evaluation:
+
+```bash
+python setup.py build_ext --inplace
+```
+then run the following line to install tools used in random sampling:
+
+```bash
+python local_compile_setup.py build_ext --inplace
+```
+
+To run model on tencent_synthetic data, use main_synthetic.py, ex:
+```bash
+python main_synthetic.py --modeltype DEBIAS_batch --infonce 1 --neg_samles -1 --n_layers 2 --dataset tencent_synthetic --need_distance 1 --lambda1 1e-2 --lambda2 1e-6 --lambda3 1e-2 
+```
+
+To run model on other datset, user main.py, ex:
+```bash
+python main.py --modeltype DEBIAS --infonce 1 --neg_samles 64 --n_layers 2 --dataset yahoo.new --need_distance 1 --lambda1 1 --lambda2 1e-7 --lambda3 1e-1
+```
+Related hyperparameters are listed in the appendix of the paper.
+
