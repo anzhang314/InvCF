@@ -16,12 +16,12 @@ CF models assume that the training and test data are drawn from the same distrib
 
 + Q: How do we solve the problem?
 
-Our solution is to filter out the unstable or outdated popularity features and learn preference representations invariant to the change of popularity semantics. we propose a new learning paradigm, called Invariant Collaborative Filtering. We achieve the goal of generalization by implementing two principles: Disentanglement principle and Invariance principle. 
-![image](https://user-images.githubusercontent.com/59708248/217766716-16aa0859-2054-418e-9b3b-43a183dea202.png)
-
-
+Our solution is to filter out the unstable or outdated popularity features and learn preference representations invariant to the change of popularity semantics. We propose a new learning paradigm, called Invariant Collaborative Filtering (InvCF). We achieve the goal of generalization by implementing two principles: Disentanglement principle and Invariance principle. 
 
 * Q: Why does our solution lead to robust performance?
+
+In the testing scenario with popularity distribution from training, since we have fed the model with augmented popularity information along the scale, it will make a good generalization under the shift. As a result, we learn robust representation against diversified distribution changes.
+ 
 
 ## Installation
 
