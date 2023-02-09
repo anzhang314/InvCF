@@ -15,6 +15,12 @@ That’s because there exists a confliction between the implicit assumption of C
 CF models assume that the training and test data are drawn from the same distribution, but the assumption hardly holds. Popularity distribution shifts are ubiquitous and inevitable in real-world scenarios 
 
 + Q: How do we solve the problem?
+
+Our solution is to filter out the unstable or outdated popularity features and learn preference representations invariant to the change of popularity semantics. we propose a new learning paradigm, called Invariant Collaborative Filtering. We achieve the goal of generalization by implementing two principles: Disentanglement principle and Invariance principle. 
+![image](https://user-images.githubusercontent.com/59708248/217766716-16aa0859-2054-418e-9b3b-43a183dea202.png)
+
+
+
 * Q: Why does our solution lead to robust performance?
 
 ## Installation
