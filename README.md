@@ -51,3 +51,17 @@ python main.py --modeltype DEBIAS --infonce 1 --neg_samles 64 --n_layers 2 --dat
 ```
 Related hyperparameters are listed in the appendix of the paper.
 
+## Reference
+If you want to use our codes and datasets in your research, please cite:
+```bash
+@inproceedings{bc_loss,   
+      author    = {An Zhang and
+                   Jingnan Zheng and 
+                   Xiang Wang and 
+                   Yancheng	Yuan and
+                   Tat-seng Chua}, 
+      title     = {Invariant Collaborative Filtering to Popularity Distribution Shift},  
+      booktitle = {{WWW}},  
+      year      = {2023},   
+}
+```
