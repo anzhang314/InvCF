@@ -51,6 +51,9 @@ python main.py --modeltype DEBIAS --infonce 1 --neg_sample 64 --n_layers 2 --dat
 ```
 Related hyperparameters are listed in the appendix of the paper.
 
+
+If you are interested in how to get the 3D visualization in our paper, you can use Draw_Picutures.ipynb for a try.
+
 ## Reference
 If you want to use our codes and datasets in your research, please cite:
 ```bash
