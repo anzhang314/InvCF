@@ -1119,8 +1119,8 @@ class DEBIAS(LGN):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
-        neg_items_pop = all_users_p[neg_items]
+        pos_items_pop = all_items_p[pos_items]
+        neg_items_pop = all_items_p[neg_items]
 
         #users_pop = userEmb0_p
         #pos_items_pop = posEmb0_p
@@ -1213,8 +1213,8 @@ class DEBIAS_plot(LGN):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
-        neg_items_pop = all_users_p[neg_items]
+        pos_items_pop = all_items_p[pos_items]
+        neg_items_pop = all_items_p[neg_items]
         
         pop_mf_loss, pop_reg_loss =  self.infonce_loss(users_pop, pos_items_pop, neg_items_pop, userEmb0_p, posEmb0_p, negEmb0_p)
            
@@ -1265,7 +1265,7 @@ class DEBIAS_plot_batch(DEBIAS_plot):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
+        pos_items_pop = all_items_p[pos_items]
         
         pop_mf_loss, pop_reg_loss =  self.infonce_loss(users_pop, pos_items_pop, userEmb0_p, posEmb0_p)
            
@@ -1330,7 +1330,7 @@ class DEBIAS_batch(DEBIAS):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
+        pos_items_pop = all_items_p[pos_items]
         #users_pop = userEmb0_p
         #pos_items_pop = posEmb0_p
         
