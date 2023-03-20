@@ -148,8 +148,8 @@ class LGN_plot(LGN):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
-        neg_items_pop = all_users_p[neg_items]
+        pos_items_pop = all_items_p[pos_items]
+        neg_items_pop = all_items_p[neg_items]
 
         pos_scores = torch.sum(torch.mul(users_pop, pos_items_pop), dim=1)  # users, pos_items, neg_items have the same shape
         neg_scores = torch.sum(torch.mul(users_pop, neg_items_pop), dim=1)
@@ -883,8 +883,8 @@ class DEBIAS_BPR(LGN):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
-        neg_items_pop = all_users_p[neg_items]
+        pos_items_pop = all_items_p[pos_items]
+        neg_items_pop = all_items_p[neg_items]
         
         users = all_users[users]
         pos_items = all_items[pos_items]
@@ -2040,8 +2040,8 @@ class DEBIAS_ablation(DEBIAS):
         all_users_p, all_items_p = self.compute_p()
 
         users_pop = all_users_p[users]
-        pos_items_pop = all_users_p[pos_items]
-        neg_items_pop = all_users_p[neg_items]
+        pos_items_pop = all_items_p[pos_items]
+        neg_items_pop = all_items_p[neg_items]
 
         users = all_users[users]
         pos_items = all_items[pos_items]
