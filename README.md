@@ -57,7 +57,7 @@ If you are interested in how to get the 3D visualization in our paper, you can u
 ## Reference
 If you want to use our codes and datasets in your research, please cite:
 ```bash
-@inproceedings{bc_loss,   
+@inproceedings{InvCF,   
       author    = {An Zhang and
                    Jingnan Zheng and 
                    Xiang Wang and 
