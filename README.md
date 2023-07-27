@@ -45,9 +45,9 @@ To run model on tencent_synthetic data, use main_synthetic.py, like:
 python main_synthetic.py --modeltype DEBIAS_batch --infonce 1 --neg_sample -1 --n_layers 2 --dataset tencent_synthetic --need_distance 1 --lambda1 1e-2 --lambda2 1e-6 --lambda3 1e-2 
 ```
 
-To run model on other datset, user main.py, like:
+To run model on other dataset, user main.py, like:
 ```bash
-python main.py --modeltype DEBIAS --infonce 1 --tau 0.15 --neg_sample 128 --n_layers 0 --dataset yahoo.new --need_distance 1 --lambda1 1e-4 --lambda2 1e-3 --lambda3 1e-5
+python main.py --modeltype DEBIAS --infonce 1 --tau 0.13 --neg_sample 128 --n_layers 0 --dataset douban.new --need_distance 1 --lambda1 1e-2 --lambda2 1--lambda3 1e-5
 ```
 Related hyperparameters are listed in the appendix of the paper.
 
