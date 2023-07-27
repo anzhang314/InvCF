@@ -47,7 +47,7 @@ python main_synthetic.py --modeltype DEBIAS_batch --infonce 1 --neg_sample -1 --
 
 To run model on other datset, user main.py, like:
 ```bash
-python main.py --modeltype DEBIAS --infonce 1 --tau 0.18 --neg_sample 64 --n_layers 2 --dataset yahoo.new --need_distance 1 --lambda1 1e-1 --lambda2 1e-7 --lambda3 1e-1
+python main.py --modeltype DEBIAS --infonce 1 --tau 0.15 --neg_sample 128 --n_layers 0 --dataset yahoo.new --need_distance 1 --lambda1 1e-4 --lambda2 1e-3 --lambda3 1e-5
 ```
 Related hyperparameters are listed in the appendix of the paper.
 
